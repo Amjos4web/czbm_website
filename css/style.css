@@ -21,6 +21,21 @@ a:hover{
 a:visited {
 	color: #fff;
 }
+.link {
+	text-decoration: none;
+	color: #d30c0c;
+	background-color: rgba(22, 34, 56, 0.8);
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 15px;
+	transition: 1s ease-in-out;
+}
+.link:hover {
+	background-color: rgba(47, 82, 146, 0.8);
+}
+.f-13 {
+	font-size: 13px;
+}
 body::after{
 	content: '';
 	display: block;
@@ -136,6 +151,7 @@ body::after{
 	height: 100%;
 	opacity: .0;
 	transition: 1.5s ease-in-out;
+
 }
 #slider .slides:first-child{
 	z-index: 100;
@@ -377,6 +393,7 @@ body::after{
 	font-size: 15px;
 	font-weight: bolder;
 	text-transform: uppercase;
+	transition: 0.4s all ease-in-out;
 }
 
 .paragraphs .buttons a{
@@ -386,7 +403,7 @@ body::after{
 	color: red;
 }
 .paragraphs .buttons a:hover{
-	color: #000;
+	color: #aaa;
 }
 .paragraphs .buttons{
  
@@ -415,11 +432,32 @@ body::after{
 }
 .books > div{
 	width: 240px;
-	height: auto;
+	height: 240px;
 	margin: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-.books .column-2 h1{
-	color: #000;
+.books .books-content h2{
+	color: #fff;
+	line-height: 60px;
+}
+.books .books-content {
+	background-color: rgba(22, 34, 56, 0.8);
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-shadow: 3px 3px 3px #333;
+	transition: 0.4s all ease-in-out;
+}
+.books-content:hover {
+	background-color: rgba(55, 76, 116, 0.8);
+	cursor: pointer;
+}
+.books-content p {
+	font-style: italic;
+	font-size: 14px;
+	color: #fff;
 }
 .banner{
 	background-image: url('../images/clm1.jpg');
@@ -429,6 +467,7 @@ body::after{
 	height: 250px;
 	width: 100%;
 	margin: auto;
+	background-position: top;
 }
 .banner-biography{
 	background: rgba(22, 34, 56, 0.8);
@@ -436,9 +475,9 @@ body::after{
 	width: 100%;
 }
 .banner-text h1{
-	font-size: 42px;
+	font-size: 38px;
 	color: #fff;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	padding-top:90px; 
 }
 
@@ -726,7 +765,7 @@ span.error-message {
 	font-family: cursive;
 }
 .big-banner{
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
@@ -836,7 +875,7 @@ span.error-message {
 }
 
 .Big-btn{
-	background-color: #EF3012;
+	background-color: rgb(22 34 56);
 	padding: 4px 28px;
 	border: 1px solid #f1f1f1;
 	border-radius: 5px;
@@ -1200,7 +1239,7 @@ span.error-message {
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 655px) {
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
@@ -1210,7 +1249,7 @@ span.error-message {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 655px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
